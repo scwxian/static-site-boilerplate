@@ -1,0 +1,15 @@
+/* Site's Theme, Fonts, Colors, Borders, Bg, etc */
+@import "custom/theme.css"; 
+
+/* Base & Structure Styles, almost never need to touch */
+@import "foundation/base.css";   /* Generic browser resets and base page foundation structure */
+@import "foundation/legal-pages.css"; /* Specific styles for legal pages only */
+
+/* Websites Overall UI */
+@import "foundation/header-footer.css"; /* Header and Footer Styles */
+@import "foundation/sections.css"; /* Section styles like padding between and main core looks */
+@import "foundation/ui-elements.css"; /* Buttons, Typography, Images, and more */
+@import "foundation/animations.css"; /* Global Animations */
+
+/* Project Specific (Clear on new project) */
+@import "custom/custom-styles.css";

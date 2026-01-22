@@ -1,0 +1,84 @@
+@import "/css/section-layouts/overlap.css";
+@import "/css/section-layouts/two-column.css";
+
+/* contact list styles */
+.contact-links {
+  list-style-type: none;
+  padding-left: 0; 
+  font-size: 1rem;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.contact-links li {
+  display: flex;   
+  margin-bottom: 1rem; 
+}
+
+.contact-links li a {
+  text-decoration: none;
+}
+
+.contact-links li a:hover {
+  text-decoration: underline;
+}
+
+.contact-links li::before {
+  content: '';      
+  display: inline-block;
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-right: 0.8rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-links li#email::before {
+  background-image: url('/assets/icons/email-pixel-icon.png');
+}
+
+.contact-links li#whatsapp::before {
+  background-image: url('/assets/icons/whatsapp-pixel-icon.png');
+}
+
+.contact-links li#instagram::before {
+  background-image: url('/assets/icons/instagram-pixel-icon.png');
+}
+
+/* seamless slide animation, only available on home */
+.seamless-slide-container {
+  width: 100%;
+  overflow: hidden; 
+  white-space: nowrap; 
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, var(--theme-color) 5%, var(--theme-color) 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, var(--theme-color) 5%, var(--theme-color) 95%, transparent 100%);
+  margin: 0 auto;
+  padding: 0;
+}
+
+#seamless-slide-content {
+  will-change: transform;
+  backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: var(--bold-font-weight);
+  display: inline-block;
+  animation: seamlessSlide 15s linear infinite;
+  text-transform: uppercase;
+  font-family: var(--sans-font);
+}
+
+@keyframes seamlessSlide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.seamless-slide-image {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 3rem; 
+  vertical-align: middle; 
+}

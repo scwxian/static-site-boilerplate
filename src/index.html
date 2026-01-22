@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <load 
+            src="partials/meta.html" 
+            href="%%SITE_URL%%/"
+            title="%%SITE_NAME%% | Tagline Here"
+            description="%%SITE_DESC%%"
+            page="home"
+        />
+        <script type="application/ld+json">
+            {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "%%SITE_NAME%%",
+      "url": "%%SITE_URL%%",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "%%SITE_URL%%/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "%%SITE_NAME%%",
+      "url": "%%SITE_URL%%",
+      "logo": "%%SITE_URL%%/meta-assets/logo.png",
+      "image": "%%SITE_URL%%/meta-assets/cover-image.png",
+      "description": "%%SITE_DESC%%",
+      "telephone": "+60123456789",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "addressCountry": "Country(TWO-LETTER-ABBV)"
+      },
+      "sameAs": [
+        "https://www.instagram.com/yourhandle",
+        "https://www.facebook.com/yourhandle",
+      ],
+      "keywords": "keyword 1, keyword 2, keyword 3"
+    }
+  ]
+}
+        </script>
+
+    </head>
+
+    <body>
+        <h1 class="hidden-visually">%%SITE_NAME%%</h1>
+        <load src="/partials/header.html" />
+        <main id="swup" data-page="home">
+            <section class="overlap-layout">
+
+                <div class="overlap-layout-content">
+                    <div class="section-subtitle">
+                         Tagline-1<img src="https://placehold.co/20x20" alt="" class="section-icon">
+                         Tagline-2<img src="https://placehold.co/20x20" alt="" class="section-icon">
+
+                    </div>
+                    <h2 class="section-title">Main Hero Title</h2>
+                </div>
+
+                <div class="overlap-layout-image animate-element fade-in">
+                    <div class="image-masker-overlay" style="--mask-url: url('https://placehold.co/600x600/png')">
+                        <img loading="lazy" class="" src="https://placehold.co/600x600/png" alt="Image Alt">
+                    </div>
+                </div>
+                <div class="overlap-layout-content">
+                    <p class="section-body">Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+                    <p class="section-body">Laboris est proident duis magna amet <b>Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea.</b></p>
+                    <div class="section-cta animate-element slide-from-left delay-animation-small"><a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" class="button">Click Me</a></div>
+                </div>
+            </section>
+
+            <section class="break-section">
+
+                <div class="image-masker-overlay">
+                    <img src="https://placehold.co/1920x600" alt="" loading="lazy">
+                </div>
+                <div class="break-section-content"> 
+                    <div class="seamless-slide-container">
+                        <p id="seamless-slide-content">
+                            &nbsp;Your Scrolling Text Here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;Your Scrolling Text Here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;Your Scrolling Text Here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;Your Scrolling Text Here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="overlap-layout reverse">
+
+                <div class="overlap-layout-content animate-element slide-from-right">
+                    <div class="section-subtitle">
+                      Witty Tagline
+                    </div>
+                    <h2 class="section-title">Another Title</h2>
+                </div>
+
+                <div class="overlap-layout-image lower">
+                    <div class="image-masker-overlay" style="--mask-url: url('https://placehold.co/600x600/png')">
+                        <img loading="lazy" class="" src="https://placehold.co/600x600/png" alt="Image Alt">
+                    </div>
+                </div>
+                <div class="overlap-layout-content animate-element slide-from-right">
+                    <p class="section-body"><b>Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</b></p>
+                    <p class="section-body">Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+                    <div class="section-cta animate-element slide-from-right delay-animation-small"><a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" class="button">Click Me</a></div>
+                </div>
+            </section>
+
+            <section class="two-col-layout" >
+                    <div class="section-subtitle">
+                         Tagline <img src="https://placehold.co/20x20" alt="" class="section-icon mid-sentence"> here..
+                    </div>
+                <p class="section-subtitle"></p>
+                <div class="left-col animate-element slide-from-bottom">
+                  <div class="image-masker-overlay" style="--mask-url: url('https://placehold.co/600x600/png')">
+                    <img loading="lazy" class="" src="https://placehold.co/600x600/png" alt="Corporate Events Animation">
+                  </div>
+                    <h2 class="section-title">Column 1 Title</h2>
+                    <details>
+                        <summary>Learn More</summary>
+                        <div class="details-content">
+                          <p>Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+                        </div>
+                    </details>
+                    <div class="section-cta animate-element slide-from-bottom"><a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" class="button">Click Me</a></div>
+                </div> 
+
+                <div class="right-col animate-element slide-from-bottom delay-animation-small">
+
+                  <div class="image-masker-overlay" style="--mask-url: url('https://placehold.co/600x600/png')">
+                    <img loading="lazy" class="" src="https://placehold.co/600x600/png" alt="Corporate Events Animation">
+                  </div>
+                    <h2 class="section-title">Column 2 Title</h2>
+                    <details>
+                        <summary>Learn More</summary>
+                        <div class="details-content">
+                            <p>Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+                        </div>
+                    </details>
+                    <div class="section-cta animate-element slide-from-bottom delay-animation-small"><a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" class="button">Click Me</a></div>
+                </div> 
+            </section>
+
+            <section class="break-section">
+
+                <div class="image-masker-overlay" style="--mask-url: url('https://placehold.co/1920x600')">
+                    <img src="https://placehold.co/1920x600" alt="" loading="lazy">
+                </div>
+                <div class="break-section-content"> 
+                    <div class="center-layout">
+                        <div class="section-subtitle">
+                          Section Tagline here
+                        </div>
+                        <h2 class="section-title">Section Title</h2>
+                        <p class="section-body"><b>Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</b> <span class="more-info" data-tooltip-content="test"><i>Laboris</i></span> Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+                        <p class="section-body">Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+
+                        <div class="section-cta animate-element slide-from-bottom"><a href="%%BASE_URL%%/about/" class="button">Meet the Team</a></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="center-layout" id="contact">
+
+                    <div class="section-subtitle">
+                         Tagline 👋 here
+                    </div>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-body center-text">Laboris est proident duis magna amet est cillum id duis irure duis fugiat enim ea</p>
+                <ul class="contact-links">
+                    <li id="email">
+                        <a href="mailto:hello@yoursite.com">Email</a></li>
+                    <li id="whatsapp">
+                        <a href="https://wa.me/01236456789" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="WhatsApp Us">
+                            WhatsApp
+                        </a>
+                    </li>
+
+                    <li id="instagram">
+                        <a href="https://instagram.com/yourtag" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                          Instagram
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+        </main>  
+
+    </body>
+
+    <load src="/partials/footer.html" />
+
+</html>

@@ -1,0 +1,34 @@
+/* character stat bar styles */
+.stats-container {
+    padding: 0.5rem 0 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-weight: var(--bold-font-weight);
+    letter-spacing: 0.06rem;
+}
+
+.stat-name { display: flex; }
+
+/* The bar made of segments */
+.segmented-bar-container {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    height: 12px;
+}
+
+.segmented-bar-container .segment { flex-grow: 1; border: var(--border-width) solid var(--border); }
+
+.segmented-bar-container .segment.filled {
+    background-color: var(--accent-hover); 
+    border-color: var(--code); 
+}

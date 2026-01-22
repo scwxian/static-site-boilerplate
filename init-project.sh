@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# This script automates the process of initializing the project by creating all the .env files and updating the package.json
+
+# --- Configuration ---
+set -e
+set -u
+set -o pipefail
+
+echo "🚀 Initializing project configuration..."
+echo "📝 Creating .env files..."
+
+# Create .env with generic placeholders
+cat >.env <<EOF
+VITE_INSTAGRAM_FEED_URL=
+VITE_SITE_URL=https://mysite.com
+VITE_SITE_NAME="My New Site"
+VITE_SITE_DESC="My Site Description"
+VITE_DOMAIN_NAME=mysite.com
+VITE_BUSINESS_NAME="My Business Name"
+VITE_BUSINESS_LOCATION="City, Country"
+VITE_BUSINESS_JURISDICTION="Country"
+EOF
+
+cat >.env.development <<EOF
+VITE_BASE_URL=/mymagickeyword
+EOF
+
+cat >.env.production <<EOF
+VITE_BASE_URL=
+EOF
+
+# --- Update Package Metadata ---
+echo "📦 Updating package.json and package-lock.json..."
+
+CURRENT_USER=$(git config user.name)
+if [ -z "$CURRENT_USER" ]; then
+	CURRENT_USER=$(whoami)
+fi
+
+PROJECT_NAME=$(basename "$PWD" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+# Check if npm is installed
+if command -v npm &>/dev/null; then
+	npm pkg set name="$PROJECT_NAME"
+	npm pkg set author="$CURRENT_USER"
+	npm pkg set description="A static site project initialized via boilerplate."
+
+	npm install --package-lock-only --quiet
+
+	echo "✅ Updated Author to: $CURRENT_USER"
+	echo "✅ Updated Project Name to: $PROJECT_NAME"
+else
+	echo "❌ Error: npm is not installed. Cannot update package.json."
+	exit 1
+fi
+
+echo "🎉 Project initialized successfully!"

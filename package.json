@@ -1,0 +1,23 @@
+{
+  "name": "static-site-boilerplate",
+  "version": "1.0.0",
+  "description": "A static site project initialized via boilerplate.",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development"
+  },
+  "keywords": [],
+  "author": "Shawn Cheng",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@swup/head-plugin": "^2.3.1",
+    "@swup/preload-plugin": "^3.2.11",
+    "swup": "^4.8.2",
+    "vite": "^7.1.5",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-html-minifier": "^1.0.5"
+  }
+}

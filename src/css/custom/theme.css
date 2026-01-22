@@ -1,0 +1,85 @@
+/* Standard Custom Font */
+/* @font-face { */
+/*   font-family: 'Silkscreen'; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+/*   font-display: block; */
+/*   src: url('/assets/fonts/Silkscreen-Regular.woff2') format('woff2'); */
+/* } */
+
+/* Variable Custom Font */
+/* @font-face { */
+/*   font-family: 'Funnel Display'; */
+/*   font-style: normal; */
+/*   font-weight: 300 800; */ 
+/*   font-display: block; */
+/*   src: url('/assets/fonts/FunnelDisplay-VariableFont_wght.woff2') format('woff2-variations'); */
+/* } */
+
+:root {
+  --sans-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --serif-font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --mono-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Sizing & Spacing */
+  --standard-border-radius: 6px;  
+  --border-width: 1px;
+
+  /* Font Weights */
+  --body-font-weight: 400;
+  --bold-font-weight: 600;
+
+  /* Image Masking Overlays (Generic levels) */
+  --image-overlay-color-less: rgba(255, 255, 255, 0.2);
+  --image-overlay-color: rgba(255, 255, 255, 0.5);
+  --image-overlay-color-more: rgba(255, 255, 255, 0.8);
+
+  /* Shadows */
+  --header-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+/* LIGHT THEME (Default) */
+  --theme-color: #ffffff;
+  --bg: #ffffff;
+  --accent-bg: #f3f4f6;      
+  --text: #1f2937;           
+  --text-light: #6b7280;     
+  --border: #e5e7eb;         
+
+  --accent: #3b82f6;         
+  --accent-hover: #2563eb;   
+  --accent-text: #ffffff;    
+
+  --code: #e11d48;           
+  --preformatted: #1f2937;
+  --marked: #fef08a;         
+  --disabled: #d1d5db;       
+}
+
+/* DARK THEME */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --image-overlay-color-less: rgba(0, 0, 0, 0.2);
+    --image-overlay-color: rgba(0, 0, 0, 0.5);
+    --image-overlay-color-more: rgba(0, 0, 0, 0.8);
+    --header-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+
+    color-scheme: dark;
+    --theme-color: #000000;
+
+    --bg: #111827;           
+    --accent-bg: #1f2937;    
+    --text: #f9fafb;         
+    --text-light: #9ca3af;   
+    --border: #374151;       
+
+    --accent: #3b82f6;       
+    --accent-hover: #60a5fa; 
+    --accent-text: #ffffff;
+
+    --code: #f472b6;
+    --preformatted: #f3f4f6;
+    --marked: #854d0e;
+    --disabled: #4b5563;
+  }
+}
+
